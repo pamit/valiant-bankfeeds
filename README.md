@@ -22,7 +22,6 @@
 │           │   └── average_monthly_sales.rb
 │           ├── risk_and_expenditure/
 │           │   ├── gambling_percentage.rb
-│           │   └── nsf_or_overdraft_fee_count.rb
 │           └── loan_metrics/
 │               └── repayments_by_institution.rb
 ├── spec/
