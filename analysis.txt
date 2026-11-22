@@ -1,0 +1,42 @@
+Accounts analysed:
+- Bank of Statements Transaction Account (***6789): 51 transactions (2 pending), 2025-01-02 to 2025-04-03
+- Bank of Statements Savings Account (***5315): 73 transactions (6 pending), 2025-01-02 to 2025-04-03
+- Bank of Statements Credit Card (***7654): 55 transactions (3 pending), 2025-01-02 to 2025-04-03
+
+# Category: Account Aggregation
+
+* Average monthly sales (deposits/credits) for each account
+  Bank of Statements Transaction Account (***6789): $938.26/month (total: $2877.34)
+  Bank of Statements Savings Account (***5315): $2075.87/month (total: $6365.99)
+  Bank of Statements Credit Card (***7654): $699.91/month (total: $2146.40)
+  Wages per month: $616.10 (illion: DM001 Wages - Monthly: $718.78)
+
+# Category: Loan Metrics (Aggregated)
+
+* Total amount repaid per identified institution
+  Loan Repayment Debit: $4054.09 (17 repayments)
+  Ferratum: $1521.41 (6 repayments)
+  Sunshine Loans: $1136.94 (6 repayments)
+  Good To Go: $902.37 (3 repayments)
+  MoneyMe: $153.30 (6 repayments)
+  Total: $7768.11
+  Per month: $2533.08 (illion: DM069 All Loan Debits - Monthly: $2656.01)
+
+# Category: Risk & Expenditure
+
+* Percentage of gambling as total of all expenditure
+  Total expenditure: $18067.22
+  Gambling spend:    $1385.26 (5 transactions)
+  Percentage:        7.67%
+  Gambling per month: $451.72 (illion: DM007 Gambling Expenditure - Monthly: $944.50)
+  - 2025-01-05	$197.67	Money to Crownbet
+  - 2025-01-28	$463.50	Money to Crownbet
+  - 2025-01-29	$5.80	Money to Crownbet
+  - 2025-01-28	$255.02	Money to Crownbet
+  - 2025-02-07	$463.27	Money to Crownbet
+
+# Category: Pending transactions
+
+- Bank of Statements Transaction Account (***6789): 2 pending
+- Bank of Statements Savings Account (***5315): 6 pending
+- Bank of Statements Credit Card (***7654): 3 pending

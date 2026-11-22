@@ -1,0 +1,56 @@
+x-valiant-lending-api: &valiant-lending-api
+  build:
+    context: .
+  working_dir: /app
+  tty: true
+  depends_on:
+    - postgres
+    - redis
+
+services:
+  dev-cli:
+    build: .
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+    image: postgres:18
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: valiant-lending
+      POSTGRES_HOST_AUTH_METHOD: trust
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U valiant-lending -d valiant-lending"]
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+
+  sidekiq:
+    <<: *valiant-lending-api
+    command: echo "Sidekiq is running"
+
+  web:
+    <<: *valiant-lending-api
+    command: echo "Web is running"
+    depends_on:
+      - sidekiq
+      - postgres
+      - redis
+
+volumes:
+  postgres:
+  redis:
