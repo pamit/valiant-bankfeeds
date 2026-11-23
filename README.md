@@ -5,7 +5,7 @@
 ```text
 .
 ├── docs/
-│   └── diagrams/
+│   └── diagrams/                # SYSTEM DESIGN: C4 + SEQUENCE
 ├── fixtures/
 ├── lib/
 │   ├── bank_statement.rb        # Entry point: parse, run calculations, render report
@@ -32,6 +32,14 @@
 ├── Thorfile
 └── CHANGELOG.md
 ```
+
+## Task 1: System design
+
+The system design documents can be found under `docs/diagrams`. C4 modelling is used to model users, systems, and system components.
+
+## Task 2: Data processing
+
+The script and the calculations logic code can be found in `lib`, with data models, reporting utilities, and the main calculations.
 
 ## Setup
 
